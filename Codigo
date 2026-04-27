@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Estudiantil | Comunidad y Guía</title>
+    <style>
+        /* COLORES Y ESTILO */
+        :root {
+            --primario: #4A90E2; /* Un azul profesional pero fresco */
+            --acento: #FF7E67;   /* Color para resaltar lo anónimo */
+            --fondo: #F4F7F9;
+            --texto: #333333;
+            --blanco: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--fondo);
+            color: var(--texto);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* HEADER */
+        header {
+            background-color: var(--blanco);
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--primario);
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-style: italic;
+            color: #666;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .container {
+            width: 90%;
+            max-width: 500px;
+            padding: 20px 0;
+        }
+
+        /* TARJETAS (CARDS) */
+        .card {
+            background: var(--blanco);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-left: 6px solid var(--primario);
+            transition: transform 0.2s;
+        }
+
+        .card:active {
+            transform: scale(0.98);
+        }
+
+        .tag {
+            font-size: 0.7rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: var(--primario);
+            background: #E1EEFF;
+            padding: 4px 8px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        /* BOTONES */
+        .btn {
+            display: block;
+            width: 100%;
+            background-color: var(--primario);
+            color: white;
+            text-align: center;
+            padding: 12px 0;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            box-sizing: border-box;
+        }
+
+        .btn-acento {
+            background-color: var(--acento);
+        }
+
+        .btn-encuesta {
+            background-color: #FFC107;
+            color: #333;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #999;
+            width: 100%;
+        }
+
+        .moderacion-notice {
+            background: #fff3cd;
+            color: #856404;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid #ffeeba;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Proyecto Estudiantil</h1>
+    <p>"Guía real hecha por alumnas para alumnas"</p>
+</header>
+
+<div class="container">
+    
+    <div class="moderacion-notice">
+        ⚠️ <b>Nota de seguridad:</b> Todo lo que envíes será revisado en un lapso de 24 horas antes de ser publicado para mantener el respeto en nuestra comunidad.
+    </div>
+
+    <div class="card">
+        <span class="tag">Tips de Supervivencia</span>
+        <h2>¿Perdida en High School?</h2>
+        <p>Desde cómo estudiar mejor hasta cómo elegir carrera. Lee las experiencias de niñas que ya pasaron por lo que tú estás viviendo hoy.</p>
+        <a href="#" class="btn">Ver Guía de Tips</a>
+    </div>
+
+    <div class="
